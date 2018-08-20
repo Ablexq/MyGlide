@@ -28,11 +28,11 @@ public class OkHttpActivity extends AppCompatActivity {
 
         //自签名https图片链接 （如果链接失效，自行到12306网站找图片）
 //        String url = "https://travel.12306.cn/imgs/resources/uploadfiles/images/a9b9c76d-36ba-4e4a-8e02-9e6a1a991da0_news_W540_H300.jpg";
-        String url = "https://static.daicaihang.com/m1/images/start_pic.jpg?v=0820";
-//        String url = "https://static.daicaihang.com/m1/images/start_pic.jpg";
+//        String url = "https://static.daicaihang.com/m1/images/start_pic.jpg?v=0820";
+        String url = "https://static.daicaihang.com/m1/images/start_pic.jpg";
 //        String url = "http://static.daicash.net/m1/images/start_pic.jpg";
 
-        GlideCacheUtil.getInstance().clearImageAllCache(this);
+        GlideCacheUtil.getInstance().clearImageAllCache(this);//去除缓存，避免缓存可能导致叠加问题，比如video文件夹内的视频所示
 
         Glide.with(this)
                 .load(url)
