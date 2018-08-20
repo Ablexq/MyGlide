@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xq.myglide.MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="#e6e6e6"
+        android:gravity="center"
+        android:text="httpurlconnection"
+        android:textColor="#ff00ff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="#e6e6e6"
+        android:gravity="center"
+        android:text="okhttp"
+        android:textColor="#ff00ff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="#e6e6e6"
+        android:gravity="center"
+        android:text="volley"
+        android:textColor="#ff00ff"
+        android:textSize="25sp" />
+
+</LinearLayout>
