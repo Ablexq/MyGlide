@@ -23,7 +23,8 @@ public class HttpUrlConnectionActivity extends AppCompatActivity {
                 .load(url)
                 .crossFade(3000)
                 .thumbnail(0.1f)
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .skipMemoryCache(true)
+                .diskCacheStrategy(DiskCacheStrategy.NONE)
                 .into(imageView);
 
     }
